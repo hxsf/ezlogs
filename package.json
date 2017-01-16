@@ -1,0 +1,24 @@
+{
+  "name": "log4skynet",
+  "version": "0.0.1",
+  "description": "log4skynet is an util tool for tcbase.skynet",
+  "main": "index.js",
+  "repository": "git@git.17usoft.com:slnanal/log4skynet.git",
+  "author": "xx37180 & yc15105",
+  "license": "Apache2.0",
+  "scripts": {
+    "lint": "eslint .",
+    "esw": "esw -w .",
+    "lint-fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-watch": "^2.1.14"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1"
+  }
+}
