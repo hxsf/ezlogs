@@ -1,12 +1,13 @@
 const logger = require('../index')([{
     type: 'file',
     path: './logs-files',
+    level: 'error',
     filename: 'test_log.log'
 }])
-logger.log('abcd')
+logger.trace('abcd')
 logger.debug('abcd')
-logger.log('abcd')
+logger.info('abcd')
 setTimeout(() => {
     logger.error('bbbb')
-    logger.log('ssss')
+    logger.warn('ssss')
 }, 2001)
