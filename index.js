@@ -5,6 +5,9 @@ const DEFAULT_CONFIG = [{
 }]
 module.exports = function build(_opt) {
     const opt = _opt || DEFAULT_CONFIG
+    if (opt instanceof Array == false) {
+        throw new Error('build config must be a Array')
+    }
     const logger = new Logger()
     for (let i = 0; i < opt.length; ++i) {
         try {
