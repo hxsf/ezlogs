@@ -1,9 +1,13 @@
 {
   "name": "ezlogs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "EZLogs is an simple and light tool for log",
   "main": "index.js",
   "author": "hxsf & yourenyouyu",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/hxsf/ezlogs.git"
+  },
   "license": "Apache2.0",
   "scripts": {
     "lint": "eslint .",
@@ -22,5 +26,9 @@
   "engines": {
     "node": ">= 4.4.0",
     "npm": ">= 3.0.0"
-  }
+  },
+  "contributors": [
+    "hxsf <hxsf@vip.qq.com> (http://github.com/hxsf)",
+    "yourenyouyu <yourenyouyu@vip.qq.com> (http://github.com/yourenyouyu)"
+  ]
 }
