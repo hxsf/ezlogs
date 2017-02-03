@@ -17,7 +17,7 @@ module.exports = function build(_opt) {
             logger.appenders.push(appender)
         } catch (e) {
             // eslint-disable-next-line no-console
-            console.error('Log4skynet ERROR: ', e)
+            console.error('EZlogs ERROR: ', e)
         }
     }
     return logger

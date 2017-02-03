@@ -1,10 +1,9 @@
 {
-  "name": "log4skynet",
+  "name": "EZLogs",
   "version": "0.0.1",
-  "description": "log4skynet is an util tool for tcbase.skynet",
+  "description": "EZLogs is an simple and light tool for log",
   "main": "index.js",
-  "repository": "git@git.17usoft.com:slnanal/log4skynet.git",
-  "author": "xx37180 & yc15105",
+  "author": "hxsf & yourenyouyu",
   "license": "Apache2.0",
   "scripts": {
     "lint": "eslint .",
@@ -18,7 +17,10 @@
     "eslint-watch": "^2.1.14"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
     "mkdirp": "^0.5.1"
+  },
+  "engines": {
+    "node": ">= 4.4.0",
+    "npm": ">= 3.0.0"
   }
 }
