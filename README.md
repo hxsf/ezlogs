@@ -23,8 +23,9 @@ logger.fatal('log5')
 2017-01-23 10:18:18.131 FATAL   ==>  log5
 ```
 ### Options
+
 | name | optional | which driver can use | remark |
-| :-: | :-: | :-: | :- |
+| :---: | :---: | :---: | :------------------------- |
 | type | must | all | which driver to use. |
 | level | optional | all | default is all to output, e.g. `level = 'error'`,only `error` and `fatal` can output. |
 | pattern | optional | file-* | default is 'yyyy-MM-dd-HH-mm-ss-SSS'. the pattern in filename |
@@ -38,6 +39,7 @@ logger.fatal('log5')
 ### Drivers
 
 1. console
+
     ```javascript
     const EZlogs = require('ezlogs')
     const logger = EZlogs([{
@@ -45,7 +47,9 @@ logger.fatal('log5')
         level: 'trace',
     }])
     ```
+
 2. file
+
     ```javascript
     const EZlogs = require('ezlogs')
     const logger = EZlogs([{
@@ -54,7 +58,9 @@ logger.fatal('log5')
         filename: 'test_log.log',
     }])
     ```
+
 3. file-date
+
     ```javascript
     const EZlogs = require('ezlogs')
     const logger = EZlogs([{
@@ -65,7 +71,9 @@ logger.fatal('log5')
         max_backup: 7,
     }])
     ```
+
 4. file-size
+
     ```javascript
     const EZlogs = require('ezlogs')
     const logger = EZlogs([{
@@ -76,7 +84,9 @@ logger.fatal('log5')
         max_backup: 7
     }])
     ```
+
 5. file-number
+
     ```javascript
     const EZlogs = require('ezlogs')
     const logger = EZlogs([{
