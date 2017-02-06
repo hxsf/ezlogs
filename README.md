@@ -4,6 +4,7 @@
 
 ## Usage
 
+1. base
 ```javascript
 const EZlogs = require('ezlogs')
 const logger = EZlogs() // Default option is logging to console
@@ -14,6 +15,7 @@ logger.warn('log3')
 logger.error('log4')
 logger.fatal('log5')
 ```
+
 ```
 2017-01-23 10:18:18.131 TRACE   ==>  abcd
 2017-01-23 10:18:18.131 DEBUG   ==>  log1
@@ -22,6 +24,28 @@ logger.fatal('log5')
 2017-01-23 10:18:18.131 ERROR   ==>  log4
 2017-01-23 10:18:18.131 FATAL   ==>  log5
 ```
+2. multiple driver
+
+```javascript
+const EZlogs = require('ezlogs')
+const logger = EZlogs([{
+    type: 'console',
+    level: 'trace'
+}, {
+    type: 'file',
+    path: './logs-files',
+    filename: 'test_log.log',
+    level: 'error'
+}]) // All to console, and Only error and fatal to file
+logger.trace('abcd')
+logger.debug('log1')
+logger.info('log2')
+logger.warn('log3')
+logger.error('log4')
+logger.fatal('log5')
+```
+
+
 ### Options
 
 | name | optional | which driver can use | remark |
