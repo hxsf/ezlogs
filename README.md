@@ -6,7 +6,7 @@
 
 ```javascript
 const EZlogs = require('ezlogs')
-const logger = new EZlogs() // Default option is logging to console
+const logger = EZlogs() // Default option is logging to console
 logger.trace('abcd')
 logger.debug('log1')
 logger.info('log2')
