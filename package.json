@@ -1,6 +1,6 @@
 {
   "name": "ezlogs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "EZLogs is an simple and light tool for log",
   "main": "index.js",
   "author": "hxsf & yourenyouyu",
@@ -29,13 +29,13 @@
   },
   "contributors": [
     "hxsf <hxsf@vip.qq.com> (http://github.com/hxsf)",
-    "yourenyouyu <yourenyouyu@vip.qq.com> (http://github.com/yourenyouyu)"
+    "yourenyouyu <2300738809@qq.com> (http://github.com/yourenyouyu)"
   ],
   "maintainers": [{
     "name": "hxsf",
     "email": "hxsf@vip.qq.com"
   }, {
     "name": "yourenyouyu",
-    "email": "yourenyouyu@vip.qq.com"
+    "email": "2300738809@qq.com"
   }]
 }
