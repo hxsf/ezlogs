@@ -3,6 +3,7 @@ const Logger = require('./lib/logger')
 const DEFAULT_CONFIG = [{
     type: 'console',
 }]
+
 module.exports = function build(_opt) {
     const opt = _opt || DEFAULT_CONFIG
     if (opt instanceof Array === false) {
@@ -22,3 +23,5 @@ module.exports = function build(_opt) {
     }
     return logger
 }
+
+module.exports.EZLogs = module.exports

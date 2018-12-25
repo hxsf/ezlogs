@@ -1,41 +1,48 @@
 {
   "name": "ezlogs",
-  "version": "1.0.4",
+  "version": "2.0.1",
   "description": "EZLogs is an simple and light tool for log",
   "main": "index.js",
+  "types": "index.d.ts",
   "author": "hxsf & yourenyouyu",
   "repository": {
     "type": "git",
     "url": "http://github.com/hxsf/ezlogs.git"
   },
-  "license": "Apache2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint .",
     "esw": "esw -w .",
     "lint-fix": "eslint --fix ."
   },
   "devDependencies": {
-    "eslint": "^3.13.1",
-    "eslint-config-airbnb-base": "^11.0.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-watch": "^2.1.14"
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-watch": "^4.0.2"
   },
   "dependencies": {
     "mkdirp": "^0.5.1"
   },
   "engines": {
-    "node": ">= 4.4.0",
+    "node": ">= 8.0.0",
     "npm": ">= 3.0.0"
   },
   "contributors": [
     "hxsf <hxsf@vip.qq.com> (http://github.com/hxsf)",
     "yourenyouyu <2300738809@qq.com> (http://github.com/yourenyouyu)"
   ],
-  "maintainers": [{
-    "name": "hxsf",
-    "email": "hxsf@vip.qq.com"
-  }, {
-    "name": "yourenyouyu",
-    "email": "2300738809@qq.com"
-  }]
+  "maintainers": [
+    {
+      "name": "hxsf",
+      "email": "hxsf@vip.qq.com"
+    },
+    {
+      "name": "yourenyouyu",
+      "email": "2300738809@qq.com"
+    }
+  ]
 }
