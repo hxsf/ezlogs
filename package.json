@@ -1,6 +1,6 @@
 {
   "name": "ezlogs",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "EZLogs is an simple and light tool for log",
   "main": "index.js",
   "types": "index.d.ts",

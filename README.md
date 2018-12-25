@@ -51,6 +51,7 @@ logger.fatal('log5')
 | name | optional | which driver can use | remark |
 | :---: | :---: | :---: | :------------------------- |
 | type | must | all | which driver to use. |
+| sep | optional | all | between time and message, default is `#`. |
 | level | optional | all | default is all to output, e.g. `level = 'error'`,only `error` and `fatal` can output. |
 | pattern | optional | file-* | default is 'yyyy-MM-dd-HH-mm-ss-SSS'. the pattern in filename |
 | path | must | file-* | `full_file_path = path + filename + pattern + '.log'` |
